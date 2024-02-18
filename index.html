@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- daisyui and tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost font-extrabold text-2xl lg:text-4xl"
+            >P-Ticket</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-red_color">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="border-2 bg-slate-400" style="font-size: 24px bg">
+            Button <i class="fa fa-bus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- nav end -->
+    <head>
+      <!-- bannner  -->
+      <div class="container mx-auto">
+        <div
+          class="hero min-h-screen"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+              <p class="mb-5">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner end -->
+      <!-- best offer coupon -->
+      <div class="mt-10">
+        <h1 class="flex justify-center items-center text-bold text-4xl">
+          Best offers for you
+        </h1>
+      </div>
+      <div class="container mx-auto flex flex-row justify-center gap-6 mt-10">
+        <div
+          class="card w-[600px] bg-[#FFBF0F] shadow-xl flex flex-row justify-center items-center"
+        >
+          <div class="card-body">
+            <h2 class="card-title">15% OFF</h2>
+            <p>on your next purchase</p>
+            <p>use by january 2024</p>
+          </div>
+          <div class="card-actions flex flex-col justify-start mr-10">
+            <h1>NEW15</h1>
+            <p>Coupon Code</p>
+          </div>
+          <div>
+            <img
+              src="images/cupon-devider.png"
+              alt="Image"
+              class="card-image"
+            />
+          </div>
+        </div>
+        <!-- second coupon -->
+        <div
+          class="card w-[600px] bg-[#F78C9C] shadow-xl flex flex-row justify-center items-center"
+        >
+          <div class="card-body">
+            <h2 class="card-title">15% OFF</h2>
+            <p>on your next purchase</p>
+            <p>use by january 2024</p>
+          </div>
+          <div class="card-actions flex flex-col justify-start mr-10">
+            <h1>NEW15</h1>
+            <p>Coupon Code</p>
+          </div>
+          <div>
+            <img
+              src="images/cupon-devider.png"
+              alt="Image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- button  -->
+      <div class="flex justify-center items-center mt-8">
+        <button
+          class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white text-green-400 border-2 border-[green-400] rounded-lg"
+        >
+          See All Offers
+        </button>
+      </div>
+    </head>
+    <body>
+      <!-- poribahab part -->
+      <div class="w-full bg-slate-200 border-green-500 border-y-2 rounded-3xl">
+        <div>
+          <div class="w-full flex flex-col justify-center items-center">
+            <h1>P.H Paribahan</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+              .
+            </p>
+          </div>
+          <!-- poribahan card -->
+
+          <div
+            class="card w-[1200px] bg-white shadow-xl flex flex-row justify-center items-center container mx-auto"
+          >
+            <div class="card-body">
+              <div class="flex flex-row gap-52">
+                <div class="flex gap-5">
+                  <div>
+                    <img src="images/bus-logo.png" alt="" />
+                  </div>
+                  <div>
+                    <h1>GreenLine Paribahan</h1>
+                    <p>Coach 009-WEB ! AC Business</p>
+                  </div>
+                </div>
+                <div>
+                  <button class="flex flex-row bg-green-200">
+                    <img src="images/seat-green.png" alt="" />
+                    <p>40 Seats Left</p>
+                  </button>
+                </div>
+              </div>
+              <div class="bg-gray-400 w-[650px] border-2 rounded-md">
+                <div class="flex flex-row justify-between p-5">
+                  <p>Route</p>
+                  <div>
+                    <p>Dhaka-Sylhet</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="flex flex-row justify-between p-5">
+                  <p>Deparature Time</p>
+                  <div>
+                    <p>9:00 PM</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="flex flex-row justify-between p-5">
+                  <div class="border-red-200 bg-gray-500 rounded-lg p-2">
+                    <p>Boarding Point-Laximpur</p>
+                  </div>
+                  <div class="border-red-200 bg-gray-500 rounded-lg p-2">
+                    <p>Dropping Point-Bogura</p>
+                  </div>
+                  <div class="border-red-200 bg-gray-500 rounded-lg p-2">
+                    <p>Est.Time-11 Hour</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-actions flex flex-col justify-start mr-40">
+              <img src="images/fare.png" alt="" />
+              <h1>550 Taka</h1>
+              <p>Per Seat</p>
+            </div>
+            <div>
+              <img
+                src="images/info-devider.png"
+                alt="Image"
+                class="card-image"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- ticket part -->
+        <div class="container mx-auto flex bg-white">
+          <!-- left side -->
+          <div class="flex-1 p-5">
+            <div>
+              <h1>Select your seat</h1>
+            </div>
+            <hr />
+            <div class="flex justify-between">
+              <div class="flex gap-3">
+                <img src="images/seat-gray.png" alt="" />
+                <p>Available</p>
+              </div>
+              <div class="flex gap-3">
+                <img src="images/seat-green.png" alt="" />
+                <p>Selected</p>
+              </div>
+            </div>
+            <div class="flex justify-end mt-10">
+              <img src="images/driver wheel.png" alt="" />
+            </div>
+            <!-- row-1 -->
+            <div class="flex justify-between mt-5">
+              <div class="w-12 h-6 flex items-center justify-center">A</div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+            </div>
+            <!-- row-2 -->
+            <div class="flex justify-between mt-5">
+              <div class="w-12 h-6 flex items-center justify-center">A</div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+            </div>
+            <!-- row-3 -->
+            <div class="flex justify-between mt-5">
+              <div class="w-12 h-6 flex items-center justify-center">A</div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+            </div>
+            <!-- row-4 -->
+            <div class="flex justify-between mt-5">
+              <div class="w-12 h-6 flex items-center justify-center">A</div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+            </div>
+            <!-- row-5 -->
+            <div class="flex justify-between mt-5">
+              <div class="w-12 h-6 flex items-center justify-center">A</div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+              <div
+                class="bg-slate-400 w-12 h-6 flex items-center justify-center"
+              >
+                A
+              </div>
+            </div>
+          </div>
+          <!-- right side -->
+          <div class="flex-1 mt-5 ml-5">
+            <div>
+              <h1>Select your seat</h1>
+            </div>
+            <hr />
+            <div class="bg-slate-300 flex flex-row w-[600px]">
+              <div class="flex flex-row justify-evenly">
+                <p>seat</p>
+                <p>class</p>
+                <p>price</p>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <h1>Passenger Name*</h1>
+              <input
+                type="text"
+                value=""
+                placeholder="Enter Your Name"
+                class="border-gray-200 border-2 rounded-lg w-[500px] h-[50px]"
+              />
+            </div>
+            <div class="mt-5">
+              <h1>Passenger Name*</h1>
+              <input
+                type="text"
+                value=""
+                placeholder="Enter Your Phone Number"
+                class="border-gray-200 border-2 rounded-lg w-[500px] h-[50px]"
+              />
+            </div>
+            <div class="mt-5">
+              <h1>Passenger Name*</h1>
+              <input
+                type="text"
+                value=""
+                placeholder="Enter Your Email Id"
+                class="border-gray-200 border-2 rounded-lg w-[500px] h-[50px]"
+              />
+            </div>
+            <div class="mt-5">
+              <button class="btn btn-block w-[500px] bg-[#1DD100]">
+                block
+              </button>
+            </div>
+            <div>
+              <a href="">Terms and Condition</a>
+              <a href="">Cancellation Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <div class="w-full md:w-auto mb-4 md:mb-0">
+                <h1 class="text-xl font-bold">Left Title</h1>
+                <p>Left Content</p>
+            </div>
+            <div class="w-full md:w-auto mb-4 md:mb-0 flex justify-center md:justify-end">
+                <h1 class="text-xl font-bold mr-2">Right Title</h1>
+                <a href="#" class="text-white">
+                    <!-- Icon from FontAwesome -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15l-5.197 2.598a1 1 0 01-1.414-1.224l1.02-5.812-4.304-4.183a1 1 0 01.553-1.702l5.97-1.089L12 2l2.371 5.586 5.97 1.089a1 1 0 01.553 1.702l-4.304 4.183 1.02 5.812a1 1 0 01-1.414 1.224L12 15z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="w-full">
+                <hr class="border-gray-600">
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
