@@ -64,7 +64,7 @@
           </ul>
         </div>
         <div class="navbar-end ">
-            <a href="#ticket-section"
+            <a href="#seats-container"
               class="btn bg-[#1DD100] font-bold"
               >Bus <img src="images/bus-logo.png" class="w-10" alt=""  />
         </a>
@@ -88,7 +88,13 @@
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
                 repudiandae et a id nisi.
               </p>
-              <button class="btn btn-primary bg-green-500 ">Buy Tickets</button>
+              <!-- <button class="btn btn-primary bg-green-500 ">Buy Tickets</button> -->
+              <div class="navbar-end  ml-28">
+                <a href="#seats-container"
+                  class="btn bg-[#1DD100] font-bold"
+                  >Buy Ticket
+            </a>
+              </div>
             </div>
           </div>
         </div>
@@ -126,12 +132,12 @@
           class="card w-[600px] bg-[#F78C9C] shadow-xl flex flex-row justify-center items-center"
         >
           <div class="card-body">
-            <h2 class="card-title font-extrabold">15% OFF</h2>
+            <h2 class="card-title font-extrabold">20% OFF</h2>
             <p class="font-semibold">on your next purchase</p>
             <p>use by january 2024</p>
           </div>
           <div class="card-actions flex flex-col justify-start mr-10">
-            <h1 class="font-extrabold">NEW15</h1>
+            <h1 class="font-extrabold">couple 20</h1>
             <p>Coupon Code</p>
           </div>
           <div>
@@ -165,7 +171,7 @@
           </div>
           <!-- poribahan card -->
 
-          <div
+          <div id="ticket-section"
             class="card w-[1200px] bg-white shadow-xl flex flex-row justify-center items-center container mx-auto mt-10"
           >
             <div class="card-body">
@@ -182,7 +188,7 @@
                 <div>
                   <button class="flex flex-row bg-green-200">
                     <img src="images/seat-green.png" alt="" />
-                    <p>40 Seats Left</p>
+                    <p id="seat-left">40 Seats Left</p>
                   </button>
                 </div>
               </div>
@@ -229,7 +235,7 @@
           </div>
         </div>
         <!-- ticket part -->
-        <div id="seats" class="container mx-auto flex flex-col lg:flex-row justify-between bg-white p-4 gap-4 rounded-xl mt-10 ">
+        <div id="seats"  class="container mx-auto flex flex-col lg:flex-row justify-between bg-white p-4 gap-4 rounded-xl mt-10 ">
             <!-- seats section -->
             <div class="flex-1 lg:p-8 space-y-4">
                 <p class="font-extrabold text-3xl">Select Your Seat</p>
@@ -253,7 +259,7 @@
                 <!-- Bus seat-->
                 <div id="seats-container" class="space-y-4">
                     <!-- row 1A -->
-                    <div class="flex gap-4 items-center justify-between ">
+                    <div class="seat flex gap-4 items-center justify-between ">
                         <p>A</p>
                         <button id="A1" class="btn lg:w-28">A1</button>
                         <button id="A2" class="btn lg:w-28">A2</button>
@@ -261,7 +267,7 @@
                         <button id="A4" class="btn lg:w-28">A4</button>
                     </div>
                     <!-- row 2B -->
-                    <div class="flex gap-4 items-center justify-between ">
+                    <div class=" seat flex gap-4 items-center justify-between ">
                         <p>B</p>
                         <button id="B1" class="btn lg:w-28">B1</button>
                         <button id="B2" class="btn lg:w-28">B2</button>
@@ -269,7 +275,7 @@
                         <button id="B4" class="btn lg:w-28">B4</button>
                     </div>
                     <!-- row 3C -->
-                    <div class="flex gap-4 items-center justify-between ">
+                    <div class="seat flex gap-4 items-center justify-between ">
                         <p>C</p>
                         <button id="C1" class="btn lg:w-28">C1</button>
                         <button id="C2" class="btn lg:w-28">C2</button>
@@ -277,7 +283,7 @@
                         <button id="C4" class="btn lg:w-28">C4</button>
                     </div>
                     <!-- row 4D -->
-                    <div class="flex gap-4 items-center justify-between ">
+                    <div class="seat flex gap-4 items-center justify-between ">
                         <p>D</p>
                         <button id="D1" class="btn lg:w-28">D1</button>
                         <button id="D2" class="btn lg:w-28">D2</button>
@@ -285,7 +291,7 @@
                         <button id="D4" class="btn lg:w-28">D4</button>
                     </div>
                     <!-- row 5E -->
-                    <div class="flex gap-4 items-center justify-between ">
+                    <div class="seat flex gap-4 items-center justify-between ">
                         <p>E</p>
                         <button id="E1" class="btn lg:w-28">E1</button>
                         <button id="E2" class="btn lg:w-28">E2</button>
@@ -293,7 +299,7 @@
                         <button id="E4" class="btn lg:w-28">E4</button>
                     </div>
                     <!-- row 6F -->
-                    <div class="flex gap-4 items-center justify-between ">
+                    <div class="seat flex gap-4 items-center justify-between ">
                         <p>F</p>
                         <button id="F1" class="btn lg:w-28">F1</button>
                         <button id="F2" class="btn lg:w-28">F2</button>
@@ -301,7 +307,7 @@
                         <button id="F4" class="btn lg:w-28">F4</button>
                     </div>
                     <!-- row 7G -->
-                    <div class="flex gap-4 items-center justify-between ">
+                    <div class=" seat flex gap-4 items-center justify-between ">
                         <p>G</p>
                         <button id="G1" class="btn lg:w-28">G1</button>
                         <button id="G2" class="btn lg:w-28">G2</button>
@@ -309,7 +315,7 @@
                         <button id="G4" class="btn lg:w-28">G4</button>
                     </div>
                     <!-- row 8H -->
-                    <div class="flex gap-4 items-center justify-between ">
+                    <div class="seat flex gap-4 items-center justify-between ">
                         <p>H</p>
                         <button id="H1" class="btn lg:w-28">H1</button>
                         <button id="H2" class="btn lg:w-28">H2</button>
@@ -317,7 +323,7 @@
                         <button id="H4" class="btn lg:w-28">H4</button>
                     </div>
                     <!-- row 9I -->
-                    <div class="flex gap-4 items-center justify-between ">
+                    <div class="seat flex gap-4 items-center justify-between ">
                         <p>I</p>
                         <button id="I1" class="btn lg:w-28">I1</button>
                         <button id="I2" class="btn lg:w-28">I2</button>
@@ -325,7 +331,7 @@
                         <button id="I4" class="btn lg:w-28">I4</button>
                     </div>
                     <!-- row 10J -->
-                    <div class="flex gap-4 items-center justify-between ">
+                    <div class="seat flex gap-4 items-center justify-between ">
                         <p>J</p>
                         <button id="J1" class="btn lg:w-28">J1</button>
                         <button id="J2" class="btn lg:w-28">J2</button>
@@ -430,5 +436,6 @@
             </div>
         </div>
     </footer>
+    <script src="function.js"></script>
   </body>
 </html>
