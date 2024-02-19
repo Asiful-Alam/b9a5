@@ -158,7 +158,7 @@
         </button>
       </div>
     </head>
-    <body>
+    <main>
       <!-- poribahab part -->
       <div class="w-full bg-slate-200 border-green-500 border-y-2 rounded-3xl mt-10">
         <div>
@@ -220,6 +220,7 @@
                 </div>
               </div>
             </div>
+          
             <div class="card-actions flex flex-col justify-start mr-40">
               <img src="images/fare.png" alt="" />
               <h1>550 Taka</h1>
@@ -410,9 +411,10 @@
               <input type="text" placeholder="Enter Your Email" class="input input-bordered w-full" />
             </label>
             <!--next button -->
-            <button  class="bg-green-400  btn w-full text-white font-extrabold" >
+            <button id="next-btn" onclick="my_modal.showModal()" class="bg-primaryColor btn w-full text-white font-extrabold" >
               Next
-            </button>
+          </button>
+          
             <div class="flex justify-around">
               <p class="border-b-2">Terms and Conditions </p>
               <p class="border-b-2">Cancellation Policy </p>
@@ -420,7 +422,27 @@
           </div>
         </div>
       </div>
-    </body>
+      <!-- success popup section -->
+      <dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box flex flex-col justify-center items-center lg:p-10">
+          <img src="images/success.png" alt="">
+          <h3 class="font-bold text-lg text-green-600">Success!</h3>
+          <p class="py-4 font-bold text-center">Thank you for Booking Our Bus Seats.
+            <br>
+            We are working hard to find the best service and deals for you. 
+            </p>
+            <p>Shortly you will find a confirmation in your email.</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn  text-white bg-green-600 rounded-full">Continue</button>
+            </form>
+          </div>
+        </div>
+      </dialog>   
+     
+      <!-- modal end -->
+    </main>
     <footer class="bg-gray-900 text-white py-4">
         <div class="container mx-auto flex flex-wrap justify-between items-center">
             <div class="w-full md:w-auto mb-4 md:mb-0">
