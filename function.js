@@ -6,9 +6,9 @@ const seatsContainer = document.getElementById('seats-container');
 const seats = seatsContainer.querySelectorAll('.btn');
 
 for (const seat of seats) {
-    seat.addEventListener('click', function (e) {
-        if (!seat.classList.contains('selected')) { // Check if the seat has not been selected already
-            seat.classList.add('selected'); // Add the 'selected' class to mark the seat as selected
+    seat.addEventListener('click', function (a) {
+        if (!seat.classList.contains('selected')) { 
+            seat.classList.add('selected'); 
 
             seatCount++;
             if (seatCount <= 4) {
@@ -16,10 +16,10 @@ for (const seat of seats) {
                     document.getElementById('coupon-apply-btn').removeAttribute('disabled');
                 }
                 document.getElementById('seat-count').innerText = seatCount;
-                const seatNumber = e.target;
+                const seatNumber = a.target;
                 seatNumber.style.backgroundColor = '#1DD100';
                 seatNumber.style.color = 'white';
-                const seatNumbertext = e.target.innerText;
+                const seatNumberText = a.target.innerText;
 
                 const seatLeft = document.getElementById('seat-left').innerText;
                 const seatLeftNumber = parseInt(seatLeft);
@@ -33,7 +33,7 @@ for (const seat of seats) {
                 const p1 = document.createElement('p');
                 const p2 = document.createElement('p');
                 const p3 = document.createElement('p');
-                p1.innerText = seatNumbertext;
+                p1.innerText = seatNumberText;
                 p2.innerText = ticketClass;
                 p3.innerText = ticketPrice;
 
@@ -60,12 +60,13 @@ function couponApplyBtn() {
 
     if (inputCouponText.toUpperCase() === 'NEW15') {
         applyDiscount(15);
-    } else if (inputCouponText.toLowerCase() === 'couple 20') {
+    } else if (inputCouponText === 'Couple 20' || inputCouponText === 'Couple 20'.charAt(0).toUpperCase() + 'ouple 20'.slice(1)) {
         applyDiscount(20);
     } else {
         alert('Invalid Coupon');
     }
 }
+
 
 function applyDiscount(discountPercentage) {
     const totalPriceText = document.getElementById('total-price').innerText;
@@ -92,13 +93,12 @@ function applyDiscount(discountPercentage) {
 
 // for button disable
 window.addEventListener('DOMContentLoaded', () => {
-    // Disable the Apply button initially
+  
     document.getElementById('coupon-apply-btn').setAttribute('disabled', 'disabled');
 
-    // Add event listener to count the selected seats and enable the Apply button when 4 seats are selected
+    
     for (const seat of seats) {
         seat.addEventListener('click', function () {
-            // Check if at least one seat is selected and phone number is filled
             const phoneNumber = document.getElementById('phone-number').value.trim();
             const selectedSeats = document.querySelectorAll('.selected');
             if (seatCount > 0 && phoneNumber !== '' && selectedSeats.length >= 1) {
@@ -108,49 +108,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 // disable coupne
-// Function to apply coupon and disable fields
-function applyCouponAndDisableFields(discountPercentage) {
-    applyDiscount(discountPercentage);
-    disableCouponFieldAndButton();
-    // Save coupon status to localStorage
-    localStorage.setItem('couponApplied', 'true');
-}
-
-function couponApplyBtn() {
-    const inputCouponText = document.getElementById('coupon-input-field').value.trim();
-
-    if (inputCouponText.toUpperCase() === 'NEW15') {
-        applyCouponAndDisableFields(15);
-    } else if (inputCouponText.toLowerCase() === 'couple 20') {
-        applyCouponAndDisableFields(20);
-    } else {
-        alert('Invalid Coupon');
-    }
-}
-
-// Function to disable coupon field and apply button
-// Function to apply coupon and hide fields
-function applyCouponAndHideFields(discountPercentage) {
-    applyDiscount(discountPercentage);
-    hideCouponFieldAndButton();
-    // Save coupon status to localStorage
-    localStorage.setItem('couponApplied', 'true');
-}
-
-function couponApplyBtn() {
-    const inputCouponText = document.getElementById('coupon-input-field').value.trim();
-
-    if (inputCouponText.toUpperCase() === 'NEW15') {
-        applyCouponAndHideFields(15);
-    } else if (inputCouponText.toLowerCase() === 'couple 20') {
-        applyCouponAndHideFields(20);
-    } else {
-        alert('Invalid Coupon');
-    }
-}
 
 // Function to hide coupon field and apply button
-// Function to apply coupon and hide fields
 function applyCouponAndHideFields(discountPercentage) {
     applyDiscount(discountPercentage);
     hideCouponFieldAndButton();
@@ -161,30 +120,9 @@ function applyCouponAndHideFields(discountPercentage) {
 function couponApplyBtn() {
     const inputCouponText = document.getElementById('coupon-input-field').value.trim();
 
-    if (inputCouponText.toUpperCase() === 'NEW15') {
+    if (inputCouponText === 'NEW15') {
         applyCouponAndHideFields(15);
-    } else if (inputCouponText.toLowerCase() === 'couple 20') {
-        applyCouponAndHideFields(20);
-    } else {
-        alert('Invalid Coupon');
-    }
-}
-
-// Function to hide coupon field and apply button
-// Function to apply coupon and hide fields
-function applyCouponAndHideFields(discountPercentage) {
-    applyDiscount(discountPercentage);
-    hideCouponFieldAndButton();
-    // Save coupon status to localStorage
-    localStorage.setItem('couponApplied', 'true');
-}
-
-function couponApplyBtn() {
-    const inputCouponText = document.getElementById('coupon-input-field').value.trim();
-
-    if (inputCouponText.toUpperCase() === 'NEW15') {
-        applyCouponAndHideFields(15);
-    } else if (inputCouponText.toLowerCase() === 'couple 20') {
+    } else if (inputCouponText === 'Couple 20') {
         applyCouponAndHideFields(20);
     } else {
         alert('Invalid Coupon');
